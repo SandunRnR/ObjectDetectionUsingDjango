@@ -4,7 +4,7 @@ from django.db import models
 
 class Object(models.Model):
     class_name = models.CharField(max_length=200)
-    confidence = models.IntegerField()
+    confidence = models.FloatField()
     timestamp = models.DateTimeField(auto_now_add=True)
     
 
